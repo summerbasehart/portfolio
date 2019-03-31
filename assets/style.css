@@ -8,3 +8,12 @@
     width: 100%;
     object-fit: cover;
 }
+
+#description{
+    border: dotted black;
+}
+
+#photo {
+    size: auto;
+    border: dotted black;
+}
