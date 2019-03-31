@@ -11,9 +11,13 @@
 
 #description{
     border: dotted black;
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
 }
 
 #photo {
-    size: auto;
+    width: 100 px;
+    height: 100 px;
     border: dotted black;
 }
