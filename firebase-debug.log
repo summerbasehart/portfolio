@@ -1,0 +1,22 @@
+[debug] [2019-06-29T05:33:10.811Z] ----------------------------------------------------------------------
+[debug] [2019-06-29T05:33:10.815Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Summer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-06-29T05:33:10.815Z] CLI Version:   7.0.2
+[debug] [2019-06-29T05:33:10.815Z] Platform:      win32
+[debug] [2019-06-29T05:33:10.815Z] Node Version:  v10.15.1
+[debug] [2019-06-29T05:33:10.816Z] Time:          Fri Jun 28 2019 22:33:10 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-06-29T05:33:10.816Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-06-29T05:33:10.836Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-06-29T05:33:10.837Z] > authorizing via signed-in user
+[debug] [2019-06-29T05:33:10.837Z] [iam] checking project portfolio-summerbasehart for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-06-29T05:33:10.840Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-summerbasehart:testIamPermissions  
+
+[debug] [2019-06-29T05:33:12.034Z] <<< HTTP RESPONSE 200
+[debug] [2019-06-29T05:33:12.048Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-summerbasehart  
+ 
+[debug] [2019-06-29T05:33:13.405Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'portfolio-summerbasehart'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
