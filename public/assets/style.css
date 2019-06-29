@@ -26,3 +26,7 @@
     width: auto\9; 
     align-content: right;
 }
+
+.card-img-top {
+    height: 50%;
+}
