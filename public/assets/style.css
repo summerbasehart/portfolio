@@ -41,7 +41,8 @@ form {
 }
 
 #selfie {
-    height: 570px;
+    height: inherit;
+    max-height: 570px;
 }
 
 .card-img-top {
