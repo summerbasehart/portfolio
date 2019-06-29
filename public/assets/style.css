@@ -19,6 +19,7 @@ form {
     float: none; /* Added */
     margin-bottom: 10px; /* Added */
     font-family: 'Cardo', serif;
+    text-align: center;
 }
 
 .navbar {
