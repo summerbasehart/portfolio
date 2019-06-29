@@ -6,9 +6,12 @@ body {
     background-position: center center;  
 }
 
+#contact {
+    align-content: center;
+}
+
 form {
     font-family: 'Cardo', serif;
-
 }
 
 .card {
