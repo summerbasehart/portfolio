@@ -4,6 +4,7 @@ body {
     background-repeat:   no-repeat;
     background-position: center center; 
     opacity: 0.75; 
+    background-image: url("../public/assets/images/newbackground.jpg")
 }
 
 #contact {
