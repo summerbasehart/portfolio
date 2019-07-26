@@ -1,9 +1,10 @@
 body {
-    background-image: url(./images/newbackground.jpg);
+    background-image: url(./images/newbackground.jpg) !important;
     background-attachment: fixed;
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
-    background-position: center center;  
+    background-position: center center; 
+    opacity: 0.75; 
 }
 
 #contact {
@@ -56,3 +57,4 @@ form {
 .card-img-top {
     height: 50%;
 }
+
