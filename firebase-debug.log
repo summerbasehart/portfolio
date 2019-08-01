@@ -1,106 +1,17 @@
-[debug] [2019-07-27T07:33:55.528Z] ----------------------------------------------------------------------
-[debug] [2019-07-27T07:33:55.531Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Summer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
-[debug] [2019-07-27T07:33:55.531Z] CLI Version:   7.2.1
-[debug] [2019-07-27T07:33:55.531Z] Platform:      win32
-[debug] [2019-07-27T07:33:55.531Z] Node Version:  v10.15.1
-[debug] [2019-07-27T07:33:55.532Z] Time:          Sat Jul 27 2019 00:33:55 GMT-0700 (Pacific Daylight Time)
-[debug] [2019-07-27T07:33:55.532Z] ----------------------------------------------------------------------
+[debug] [2019-08-01T18:06:40.092Z] ----------------------------------------------------------------------
+[debug] [2019-08-01T18:06:40.132Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Summer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-08-01T18:06:40.132Z] CLI Version:   7.2.2
+[debug] [2019-08-01T18:06:40.133Z] Platform:      win32
+[debug] [2019-08-01T18:06:40.133Z] Node Version:  v10.15.1
+[debug] [2019-08-01T18:06:40.135Z] Time:          Thu Aug 01 2019 11:06:40 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-08-01T18:06:40.135Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-07-27T07:33:55.542Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-07-27T07:33:55.544Z] > authorizing via signed-in user
-[debug] [2019-07-27T07:33:55.544Z] [iam] checking project portfolio-summerbasehart for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
-[debug] [2019-07-27T07:33:55.546Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-07-27T07:33:55.547Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2019-07-27T07:33:57.698Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-27T07:33:57.729Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-summerbasehart:testIamPermissions  
+[debug] [2019-08-01T18:06:40.227Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-01T18:06:40.231Z] > authorizing via signed-in user
+[debug] [2019-08-01T18:06:40.231Z] [iam] checking project portfolio-summerbasehart for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-08-01T18:06:40.238Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-summerbasehart:testIamPermissions  
 
-[debug] [2019-07-27T07:33:59.262Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-27T07:33:59.264Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-summerbasehart  
+[debug] [2019-08-01T18:06:40.726Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-01T18:06:40.731Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-summerbasehart  
  
-[debug] [2019-07-27T07:34:00.501Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Deploying to 'portfolio-summerbasehart'...
-[info] 
-[info] i  deploying database, storage, firestore, functions, hosting
-[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
-[info] +  functions: Finished running predeploy script.
-[info] i  database: checking rules syntax...
-[debug] [2019-07-27T07:34:06.482Z] >>> HTTP REQUEST PUT https://portfolio-summerbasehart.firebaseio.com/.settings/rules.json?dryRun=true  
- {
-  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
-  "rules": {
-    ".read": false,
-    ".write": false
-  }
-}
-[debug] [2019-07-27T07:34:07.007Z] <<< HTTP RESPONSE 200
-[info] +  database: rules syntax for database portfolio-summerbasehart is valid
-[debug] [2019-07-27T07:34:07.009Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/portfolio-summerbasehart  
- 
-[debug] [2019-07-27T07:34:08.224Z] <<< HTTP RESPONSE 200
-[info] i  storage: checking storage.rules for compilation errors...
-[debug] [2019-07-27T07:34:08.226Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart:test  
-
-[debug] [2019-07-27T07:34:08.833Z] <<< HTTP RESPONSE 200
-[info] +  storage: rules file storage.rules compiled successfully
-[info] i  firestore: checking firestore.rules for compilation errors...
-[info] i  firestore: reading indexes from firestore.indexes.json...
-[debug] [2019-07-27T07:34:08.836Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart:test  
-
-[debug] [2019-07-27T07:34:09.482Z] <<< HTTP RESPONSE 200
-[info] +  firestore: rules file firestore.rules compiled successfully
-[debug] [2019-07-27T07:34:09.484Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "lint": "eslint .",
-    "serve": "firebase serve --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "8"
-  },
-  "dependencies": {
-    "firebase-admin": "^8.0.0",
-    "firebase-functions": "^3.0.0"
-  },
-  "devDependencies": {
-    "eslint": "^5.12.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "firebase-functions-test": "^0.1.6"
-  },
-  "private": true
-}
-[info] i  functions: ensuring necessary APIs are enabled...
-[debug] [2019-07-27T07:34:09.485Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/portfolio-summerbasehart/services/cloudfunctions.googleapis.com  
- 
-[debug] [2019-07-27T07:34:09.485Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/portfolio-summerbasehart/services/runtimeconfig.googleapis.com  
- 
-[debug] [2019-07-27T07:34:10.608Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-27T07:34:10.773Z] <<< HTTP RESPONSE 200
-[info] +  functions: all necessary APIs are enabled
-[debug] [2019-07-27T07:34:10.784Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/portfolio-summerbasehart/adminSdkConfig  
- 
-[debug] [2019-07-27T07:34:11.479Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-27T07:34:11.481Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/portfolio-summerbasehart/versions  
-
-[debug] [2019-07-27T07:34:12.903Z] <<< HTTP RESPONSE 200
-[info] i  storage: uploading rules storage.rules...
-[debug] [2019-07-27T07:34:12.904Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/rulesets  
-
-[debug] [2019-07-27T07:34:13.505Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-27T07:34:13.506Z] [rules] created ruleset projects/portfolio-summerbasehart/rulesets/ebb7e37e-bdb4-46e1-b81b-588d60f11791
-[info] i  firestore: uploading rules firestore.rules...
-[debug] [2019-07-27T07:34:13.508Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/rulesets  
-
-[debug] [2019-07-27T07:34:13.509Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/portfolio-summerbasehart/databases/(default)/collectionGroups/-/indexes  
- 
-[debug] [2019-07-27T07:34:14.377Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-27T07:34:14.377Z] [rules] created ruleset projects/portfolio-summerbasehart/rulesets/1c31105e-aa8f-4e0a-b297-9c9c5e86ef5c
-[debug] [2019-07-27T07:34:14.417Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-27T07:34:14.417Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/portfolio-summerbasehart/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
- 
+[debug] [2019-08-01T18:06:40.974Z] <<< HTTP RESPONSE 200
