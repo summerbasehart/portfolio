@@ -1,67 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Me</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Cardo|Courgette&display=swap" rel="stylesheet">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Summer Grace</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/resume.min.css" rel="stylesheet">
+
 </head>
-<body>
-    <div class="container">
-        <nav class="navbar navbar-dark">
-            <a class="navbar-brand">Summer Grace</a>
-            <div id="navbarNav">
-                <ul class="nav nav-fill">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div class="row" id="description" style="padding-top: 2%">
-            <div class="card" style="width: 32rem; padding-bottom: 0% !important">
-                <div class="card-body" style="text-align: left !important">
-                    <h3 style="font-family: 'Courgette', cursive !important">Developer and Momma</h3>
-                    <p> 
-                        Hello! My name is Summer Grace Basehart. I am a full stack developer. I am recently finished the the UC   Irvine Coding Bootcamp. Majored in computer science and minored in mathematics, and graduated in 2019. I have a background in art and design. I am getting back to work after having my first baby. Dedicated and knowledgeable, with experience in management, inventory, and e-commerce.
-                    </p> <br>
-                    <h4>Skills Include(but are not limited to):</h4>
-                    <p>HTML & CSS <br>
-                        Javascript <br>
-                        REACT<br>
-                        MySQL<br>
-                        MongoDB<br>
-                        Photoshop<br>
-                        Google Sheets/Microsoft Office<br>
-                        Netsuite<br>
-                        POS<br>
-                    </p>
-                </div>
-            </div>
-            <div class="card" style="width: 32rem; padding-bottom: 0% !important">
-                <img id="selfie" src="./assets/images/Photo.jpg" class="card-img" alt="Card image cap">
-            </div>
-        </div>
-        <form method="get" action="./assets/SummerBasehartResume.pdf" style="align-content: center; padding-bottom: 30px">
-            <button type="submit" class="btn btn-dark btn-lg btn-block">Download My Resume!</button>
-        </form>
+
+<body id="page-top">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Summer Grace Basehart</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="me w/ red hair">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#awards">Certifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" method="get" action="./img/SummerBasehartResume.pdf" href="#portfolio">Resume</a>
+        </li>
+      </ul>
     </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/6.2.4/firebase-app.js"></script>
+  </nav>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#reserved-urls -->
+  <div class="container-fluid p-0">
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Summer
+          <span class="text-primary">Grace</span>
+        </h1>
+        <div class="subheading mb-5">Rancho Cucamonga, CA · (909) 272-2799 ·
+          <a href="mailto:summerbasehart@gmail.com">summerbasehart@gmail.com</a>
+        </div>
+        <p class="lead mb-5">HTML & CSS <br>
+          PHP & XML<br>
+          Javascript <br>
+          REACT<br>
+          MySQL<br>
+          NodeJS<br>
+          MongoDB<br>
+          Photoshop<br>
+          Netsuite<br>
+          Magento 2<br>
+          POS<br></p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/summer-basehart-b16808132/">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/summerbasehart/">
+            <i class="fab fa-github"></i>
+          </a>
+          <!-- <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a> -->
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Brand Manager</h3>
+            <div class="subheading mb-3">Target</div>
+            <p>Saved money by fixing register errors internally<br>
+              Discovered registers were not set to auto-update, leading to register errors and outside tech support bills<br>
+              Saved money by repairing and maintaining Photo Department software and its compatibility with Target systems<br>
+              Repaired and maintained equipment and software internally, preventing outside tech support bills<br>
+              Distribution of payroll<br>
+              Reverse logistics<br>
+              </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">June 2014 - February 2018</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">CS Support</h3>
+            <div class="subheading mb-3">AKDY Imports, LLC</div>
+            <p>Saved money on employment by managing 3 major accounts alone
+              (Amazon
+              Houzz
+              Home Depot)<br>
+              Trained incoming employees<br>
+              Updated and designed product catalogs
+              </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">December 2011 - March 2013</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Lead Web Developer</h3>
+            <div class="subheading mb-3">EE Systems Group, Inc.</div>
+            <p>Rebuilt and maintained corporate site "eesgi.com".<br>
+              Rebuilt and maintained retail site "eleding.com" including Magento backend.<br>
+              Updated and corrected all online listings<br>
+              Created and ran Facebook page, LinkedIn profile, Google Business, and Bing Business pages.<br>
+              Helped set up vendor integration with Shipstation.
+              </p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">August 2019 - Present</span>
+          </div>
+        </div>
+<!-- 
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Web Design Intern</h3>
+            <div class="subheading mb-3">Shout! Media Productions</div>
+            <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2008 - June 2010</span>
+          </div>
+        </div> -->
+
+      </div>
+
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">University of California, Irvine DCE</h3>
+            <div class="subheading mb-3">Graduated August 2019</div>
+            <div>Computer Science - Web Development</div>
+            <!-- <p>GPA: 3.23</p> -->
+          </div>
+          <!-- <div class="resume-date text-md-right">
+            <span class="text-primary">August 2006 - May 2010</span>
+          </div> -->
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Chaffey College</h3>
+            <div class="subheading mb-3">Transferred 2014</div>
+            <div>Computer Science and Mathematics</div>
+            <!-- <p>GPA: 3.56</p> -->
+          </div>
+          <!-- <div class="resume-date text-md-right">
+            <span class="text-primary">August 2002 - May 2006</span>
+          </div> -->
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <div class="w-100">
+        <h2 class="mb-5">Skills</h2>
+
+        <div class="subheading mb-3">Programming Languages &amp; Tools</div>
+        <ul class="list-inline dev-icons">
+          <li class="list-inline-item">
+            <i class="fab fa-html5"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-css3-alt"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-js-square"></i>
+          </li>
+          <!-- <li class="list-inline-item">
+            <i class="fab fa-angular"></i>
+          </li> -->
+          <li class="list-inline-item">
+            <i class="fab fa-react"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-node-js"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-sass"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-less"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-wordpress"></i>
+          </li>
+          <!-- <li class="list-inline-item">
+            <i class="fab fa-gulp"></i>
+          </li>
+          <li class="list-inline-item">
+            <i class="fab fa-grunt"></i>
+          </li> -->
+          <li class="list-inline-item">
+            <i class="fab fa-npm"></i>
+          </li>
+        </ul>
+
+        <div class="subheading mb-3">Workflow</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Mobile-First, Responsive Design</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Browser Testing &amp; Debugging</li>
+          <!-- <li>
+            <i class="fa-li fa fa-check"></i>
+            Cross Functional Teams</li>
+          <li>
+            <i class="fa-li fa fa-check"></i>
+            Agile Development &amp; Scrum</li> -->
+        </ul>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <div class="w-100">
+        <h2 class="mb-5">Interests</h2>
+        <p>Apart from being a web developer, I enjoy most of my time doing creative projects. I knit, sew, paint, and I do some graphic design.</p>
+        <p class="mb-0">I spend most of my free time with my family, my daughter especially. Being under a year old, we have not ventured into many outdoor activities quite yet.</p>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
+      <div class="w-100">
+        <h2 class="mb-5">Awards &amp; Certifications - University of California Issued</h2>
+        <ul class="fa-ul mb-0">
+          <li><a href="https://www.youracclaim.com/badges/cbb35069-7816-47b5-89f8-3acf17bf3588/public_url">React.js</a></li>
+
+          <li><a href="https://www.youracclaim.com/badges/9e3857e5-d7f3-40cd-88c9-74fde114d687/public_url">Node.js and Express</a></li>
+
+          <li><a href="https://www.youracclaim.com/badges/6a0d941c-64a2-4f35-abfb-4f8783da67b9/public_url">SQL and NoSQL Databases</a></li>
+
+          <li><a href="https://www.youracclaim.com/badges/e77593ba-989d-49bd-8064-ae4564d84e9f/public_url">Javascript and jQuery</a></li>
+
+          <li><a href="https://www.youracclaim.com/badges/2816eb4a-dfee-4e7a-ace8-7df0895c475c/public_url">HTML / CSS</a></li>
+          <!-- <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - James Buchanan High School - Hackathon 2006</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            3<sup>rd</sup>
+            Place - James Buchanan High School - Hackathon 2005</li> -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="portfolio">
+      <div class="w-100">
+        <h2 class="mb-5">Most Recent Projects</h2>
+        <ul class="fa-ul mb-0">
+          <li><a href="https://superstreetbattle.herokuapp.com/">Super Street Battle</a></li>
+
+          <li><a href="https://a3324aed0a.nxcli.net/">New EESGI retail site - domain not yet transferred</a></li>
+
+          <li><a href="http://www.eesgi.com">EE Systems Group, Inc Corporate Site</a></li>
+
+          <li><a href="https://sheltered-cliffs-91931.herokuapp.com/">Porcelain</a></li>
+
+          <li><a href="https://www.gabriellagalindo.com/">Resume - Gabriella Galindo</a></li>
+          <!-- <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            1<sup>st</sup>
+            Place - James Buchanan High School - Hackathon 2006</li>
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            3<sup>rd</sup>
+            Place - James Buchanan High School - Hackathon 2005</li> -->
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.min.js"></script>
+
 </body>
+
 </html>
