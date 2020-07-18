@@ -70,11 +70,22 @@ p.lead {
   }
 }
 
-.dev-icons {
+.dev-icons i {
   font-size: 3rem;
   .list-inline-item i {
     &:hover {
       color: $primary;
+    }
+  }
+}
+
+.dev-icons b {
+  font-size: 1rem;
+  display: none;
+  .list-inline-item i {
+    &:hover {
+      color: $primary;
+      display: block;
     }
   }
 }
