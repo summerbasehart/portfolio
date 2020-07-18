@@ -70,8 +70,9 @@ p.lead {
   }
 }
 
-.dev-icons i {
+.dev-icons {
   font-size: 3rem;
+  max-width: 500px;
   .list-inline-item i {
     &:hover {
       color: $primary;
