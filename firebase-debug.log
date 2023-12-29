@@ -1,0 +1,92 @@
+[debug] [2023-12-29T03:40:03.840Z] ----------------------------------------------------------------------
+[debug] [2023-12-29T03:40:03.854Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Summer\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-29T03:40:03.854Z] CLI Version:   13.0.2
+[debug] [2023-12-29T03:40:03.855Z] Platform:      win32
+[debug] [2023-12-29T03:40:03.855Z] Node Version:  v20.10.0
+[debug] [2023-12-29T03:40:03.855Z] Time:          Thu Dec 28 2023 19:40:03 GMT-0800 (Pacific Standard Time)
+[debug] [2023-12-29T03:40:03.855Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-29T03:40:03.967Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-29T03:40:03.968Z] > authorizing via signed-in user (summerbasehart@gmail.com)
+[debug] [2023-12-29T03:40:03.968Z] [iam] checking project portfolio-summerbasehart for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2023-12-29T03:40:03.971Z] > refreshing access token with scopes: []
+[debug] [2023-12-29T03:40:03.974Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-29T03:40:03.974Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-29T03:40:04.250Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-12-29T03:40:04.250Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-29T03:40:04.262Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-summerbasehart:testIamPermissions [none]
+[debug] [2023-12-29T03:40:04.262Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-summerbasehart:testIamPermissions x-goog-quota-user=projects/portfolio-summerbasehart
+[debug] [2023-12-29T03:40:04.262Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-summerbasehart:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-12-29T03:40:04.634Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-summerbasehart:testIamPermissions 200
+[debug] [2023-12-29T03:40:04.634Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/portfolio-summerbasehart:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-12-29T03:40:04.635Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-summerbasehart [none]
+[debug] [2023-12-29T03:40:05.067Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-summerbasehart 200
+[debug] [2023-12-29T03:40:05.068Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-summerbasehart {"projectId":"portfolio-summerbasehart","projectNumber":"891678579533","displayName":"Portfolio","name":"projects/portfolio-summerbasehart","resources":{"hostingSite":"portfolio-summerbasehart","realtimeDatabaseInstance":"portfolio-summerbasehart","storageBucket":"portfolio-summerbasehart.appspot.com","locationId":"us-west2"},"state":"ACTIVE","etag":"1_7950b92f-5ec8-4d54-8221-459f95ce8a86"}
+[debug] [2023-12-29T03:40:05.068Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-summerbasehart [none]
+[debug] [2023-12-29T03:40:05.337Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-summerbasehart 200
+[debug] [2023-12-29T03:40:05.337Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portfolio-summerbasehart {"projectId":"portfolio-summerbasehart","projectNumber":"891678579533","displayName":"Portfolio","name":"projects/portfolio-summerbasehart","resources":{"hostingSite":"portfolio-summerbasehart","realtimeDatabaseInstance":"portfolio-summerbasehart","storageBucket":"portfolio-summerbasehart.appspot.com","locationId":"us-west2"},"state":"ACTIVE","etag":"1_7950b92f-5ec8-4d54-8221-459f95ce8a86"}
+[info] 
+[info] === Deploying to 'portfolio-summerbasehart'...
+[info] 
+[info] i  deploying database, storage, firestore, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2023-12-29T03:40:05.348Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/portfolio-summerbasehart/locations/-/instances/portfolio-summerbasehart [none]
+[debug] [2023-12-29T03:40:05.842Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/portfolio-summerbasehart/locations/-/instances/portfolio-summerbasehart 200
+[debug] [2023-12-29T03:40:05.843Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/portfolio-summerbasehart/locations/-/instances/portfolio-summerbasehart {"name":"projects/891678579533/locations/us-central1/instances/portfolio-summerbasehart","project":"projects/891678579533","databaseUrl":"https://portfolio-summerbasehart.firebaseio.com","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2023-12-29T03:40:05.847Z] >>> [apiv2][query] PUT https://portfolio-summerbasehart.firebaseio.com/.settings/rules.json dryRun=true
+[debug] [2023-12-29T03:40:05.848Z] >>> [apiv2][body] PUT https://portfolio-summerbasehart.firebaseio.com/.settings/rules.json "{\r\n  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */\r\n  \"rules\": {\r\n    \".read\": false,\r\n    \".write\": false\r\n  }\r\n}"
+[debug] [2023-12-29T03:40:06.140Z] <<< [apiv2][status] PUT https://portfolio-summerbasehart.firebaseio.com/.settings/rules.json 200
+[debug] [2023-12-29T03:40:06.140Z] <<< [apiv2][body] PUT https://portfolio-summerbasehart.firebaseio.com/.settings/rules.json {"status":"ok"}
+[info] +  database: rules syntax for database portfolio-summerbasehart is valid 
+[info] i  storage: ensuring required API firebasestorage.googleapis.com is enabled... 
+[debug] [2023-12-29T03:40:06.143Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/portfolio-summerbasehart/services/firebasestorage.googleapis.com [none]
+[debug] [2023-12-29T03:40:06.143Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/portfolio-summerbasehart/services/firebasestorage.googleapis.com x-goog-quota-user=projects/portfolio-summerbasehart
+[debug] [2023-12-29T03:40:06.658Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/portfolio-summerbasehart/services/firebasestorage.googleapis.com 200
+[debug] [2023-12-29T03:40:06.658Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/portfolio-summerbasehart/services/firebasestorage.googleapis.com [omitted]
+[info] +  storage: required API firebasestorage.googleapis.com is enabled 
+[debug] [2023-12-29T03:40:06.658Z] >>> [apiv2][query] GET https://firebasestorage.googleapis.com/v1alpha/projects/portfolio-summerbasehart/defaultBucket [none]
+[debug] [2023-12-29T03:40:07.276Z] <<< [apiv2][status] GET https://firebasestorage.googleapis.com/v1alpha/projects/portfolio-summerbasehart/defaultBucket 200
+[debug] [2023-12-29T03:40:07.276Z] <<< [apiv2][body] GET https://firebasestorage.googleapis.com/v1alpha/projects/portfolio-summerbasehart/defaultBucket {"name":"projects/portfolio-summerbasehart/defaultBucket","location":"US-WEST2","bucket":{"name":"projects/portfolio-summerbasehart/buckets/portfolio-summerbasehart.appspot.com"}}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2023-12-29T03:40:07.278Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart:test [none]
+[debug] [2023-12-29T03:40:07.278Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart:test [omitted]
+[debug] [2023-12-29T03:40:07.536Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart:test 200
+[debug] [2023-12-29T03:40:07.536Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart:test {"issues":[{"sourcePosition":{"fileName":"storage.rules"},"description":"Ruleset uses old version (version [1]). Please update to the latest version (version [2]).","severity":"WARNING"}]}
+[warn] !  [W] undefined:undefined - Ruleset uses old version (version [1]). Please update to the latest version (version [2]). 
+[info] +  firebase.storage: rules file storage.rules compiled successfully 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2023-12-29T03:40:07.539Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart:test [none]
+[debug] [2023-12-29T03:40:07.539Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart:test [omitted]
+[debug] [2023-12-29T03:40:07.827Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart:test 200
+[debug] [2023-12-29T03:40:07.827Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2023-12-29T03:40:07.831Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-summerbasehart/versions [none]
+[debug] [2023-12-29T03:40:07.831Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-summerbasehart/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-12-29T03:40:09.143Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-summerbasehart/versions 200
+[debug] [2023-12-29T03:40:09.143Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/portfolio-summerbasehart/versions {"name":"projects/891678579533/sites/portfolio-summerbasehart/versions/d47ed6e57f418e52","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-12-29T03:40:09.144Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/releases pageSize=10&pageToken=
+[debug] [2023-12-29T03:40:09.475Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/releases 200
+[debug] [2023-12-29T03:40:09.475Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/releases {"releases":[{"name":"projects/portfolio-summerbasehart/releases/cloud.firestore","rulesetName":"projects/portfolio-summerbasehart/rulesets/b88d160e-c12e-400d-b7e9-7e732dcec6d5","createTime":"2019-06-29T05:22:27.069124Z","updateTime":"2023-12-29T02:52:17.577998Z"},{"name":"projects/portfolio-summerbasehart/releases/firebase.storage/portfolio-summerbasehart.appspot.com","rulesetName":"projects/portfolio-summerbasehart/rulesets/de61a7a4-344a-4795-a8e7-058a6f34a660","createTime":"2019-06-29T05:22:17.035483Z","updateTime":"2023-12-29T02:52:17.357606Z"}]}
+[debug] [2023-12-29T03:40:09.515Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/rulesets/de61a7a4-344a-4795-a8e7-058a6f34a660 [none]
+[debug] [2023-12-29T03:40:09.840Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/rulesets/de61a7a4-344a-4795-a8e7-058a6f34a660 200
+[debug] [2023-12-29T03:40:09.840Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/rulesets/de61a7a4-344a-4795-a8e7-058a6f34a660 [omitted]
+[info] i  storage: latest version of storage.rules already up to date, skipping upload... 
+[info] i  firestore: deploying indexes... 
+[debug] [2023-12-29T03:40:09.845Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/releases pageSize=10&pageToken=
+[debug] [2023-12-29T03:40:09.845Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/portfolio-summerbasehart/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2023-12-29T03:40:10.094Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/portfolio-summerbasehart/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2023-12-29T03:40:10.094Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/portfolio-summerbasehart/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2023-12-29T03:40:10.094Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/portfolio-summerbasehart/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2023-12-29T03:40:10.151Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/releases 200
+[debug] [2023-12-29T03:40:10.151Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/releases {"releases":[{"name":"projects/portfolio-summerbasehart/releases/cloud.firestore","rulesetName":"projects/portfolio-summerbasehart/rulesets/b88d160e-c12e-400d-b7e9-7e732dcec6d5","createTime":"2019-06-29T05:22:27.069124Z","updateTime":"2023-12-29T02:52:17.577998Z"},{"name":"projects/portfolio-summerbasehart/releases/firebase.storage/portfolio-summerbasehart.appspot.com","rulesetName":"projects/portfolio-summerbasehart/rulesets/de61a7a4-344a-4795-a8e7-058a6f34a660","createTime":"2019-06-29T05:22:17.035483Z","updateTime":"2023-12-29T02:52:17.357606Z"}]}
+[debug] [2023-12-29T03:40:10.152Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/rulesets/b88d160e-c12e-400d-b7e9-7e732dcec6d5 [none]
+[debug] [2023-12-29T03:40:10.193Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/portfolio-summerbasehart/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2023-12-29T03:40:10.195Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/portfolio-summerbasehart/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/portfolio-summerbasehart/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] +  firestore: deployed indexes in firestore.indexes.json successfully for (default) database 
+[debug] [2023-12-29T03:40:10.314Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/rulesets/b88d160e-c12e-400d-b7e9-7e732dcec6d5 200
+[debug] [2023-12-29T03:40:10.314Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/portfolio-summerbasehart/rulesets/b88d160e-c12e-400d-b7e9-7e732dcec6d5 [omitted]
+[info] i  firestore: latest version of firestore.rules already up to date, skipping upload... 
+[info] i  hosting[portfolio-summerbasehart]: beginning deploy... 
+[info] i  hosting[portfolio-summerbasehart]: found 83 files in public 
+[debug] [2023-12-29T03:40:10.370Z] [hosting] uploading with 200 concurrency
