@@ -64,6 +64,9 @@
           <a class="nav-link js-scroll-trigger" href="#templates">Portfolio</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" target="_blank"
             href="./Resume.pdf">Resume</a>
         </li>
@@ -84,7 +87,7 @@
         <h1 class="mb-0">Summer
           <span class="text-primary">Grace</span>
         </h1>
-        <div class="subheading mb-5">Pomona, CA · (909) 272-2799 ·
+        <div class="subheading mb-5">Los Angeles Area, Calif. · (909) 272-2799 ·
           <a href="mailto:summerbasehart@gmail.com">summerbasehart@gmail.com</a>
         </div>
         <p class="lead mb-5">HTML & CSS <br>
@@ -287,7 +290,7 @@
             <i class="fab fa-css3-alt"></i> <span class="tooltiptext">CSS3</span>
           </li>
           <li class="list-inline-item">
-            <i class="fab fa-js-square"></i> <span class="tooltiptext">JavaScript/Typescript</span>
+            <i class="fab fa-js-square"></i> <span class="tooltiptext">JavaScript & Typescript</span>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-npm"></i> <span class="tooltiptext">NPM</span>
@@ -296,7 +299,7 @@
             <i class="fab fa-angular"></i><span class="tooltiptext">Angular</span>
           </li>
           <li class="list-inline-item">
-            <i class="fas fa-database"></i><span class="tooltiptext">MySQL and MicrosoftSQL</span>
+            <i class="fas fa-database"></i><span class="tooltiptext">MySQL & MicrosoftSQL</span>
           </li>
           <li class="list-inline-item">
             <i class="fab fa-react"></i><span class="tooltiptext">ReactJS</span>
@@ -518,7 +521,38 @@
   </div>
   </section>
 
-
+  <section class="contact-section" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="text-white mb-5">To set up a consultation:</h2>
+                <form action="email.php" method="post">
+                    <p class="d-flex">
+                        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputFirst" type="firstname" placeholder="First Name..." />
+                        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputLast" type="lastname" placeholder="Last Name..." />  
+                        <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputBus" type="business" placeholder="Company/Business..." />  
+                        <br>
+                        </p>
+                    <p class="d-flex">
+                    <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" type="email" placeholder="Enter email address..." />
+                    <input class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputPhone" type="phone" placeholder="Enter cell phone number..." />  
+                    <br>
+                    </p>
+                    
+                    <textarea style="display: block!important;" rows="3" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputMessage" placeholder="List available times for consultation and dates and the template you are interested in.."></textarea>
+                    <br>
+                    <button class="btn btn-primary mx-auto" type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+  <br> 
+  <br>
+  <div class="container justify-content-center text-center">
+    <footer style="color: white!important;">&copy; Summer Basehart 2024</footer>
+  </div>
   </div>
 
   <!-- Bootstrap core JavaScript -->
@@ -530,6 +564,17 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MVSBPWEX3V">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MVSBPWEX3V');
+</script>
 
 </body>
 
