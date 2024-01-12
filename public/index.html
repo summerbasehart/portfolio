@@ -553,7 +553,7 @@
   <br> 
   <br>
   <div class="container justify-content-center text-center">
-    <footer style="color: white!important;">&copy; Summer Basehart 2024</footer>
+    <footer style="color: white!important;">&copy; Summer Basehart <span id="year"></span></footer>
   </div>
   </div>
 
@@ -580,6 +580,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-MVSBPWEX3V');
+ document.getElementById("year").innerHTML = new Date().getFullYear();
 </script>
 
 </body>
